@@ -7,9 +7,9 @@ namespace Series.Entities
     public class SerieRepositorio : IRepositorio<Serie>
     {
         private List<Serie> listaSerie = new List<Serie>();
-        public void Atualiza(int id, Serie entidade)
+        public void Atualiza(int id, Serie objeto)
         {
-            throw new NotImplementedException();
+            listaSerie[id] = objeto;
         }
 
         public void Exclui(int id)
