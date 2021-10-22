@@ -42,6 +42,11 @@ namespace Series.Entities
             return Id;
         }
 
+        public bool retornaExcluido()
+		{
+			return this.Excluido;
+		}
+
         public void Excluir() 
         {
             Excluido = true;
