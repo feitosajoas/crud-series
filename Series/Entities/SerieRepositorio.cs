@@ -14,27 +14,27 @@ namespace Series.Entities
 
         public void Exclui(int id)
         {
-            throw new NotImplementedException();
+            listaSerie[id].Excluir;
         }
 
-        public void Insere(Serie entidade)
+        public void Insere(Serie objeto)
         {
-            throw new NotImplementedException();
+            listaSerie.Add(objeto);
         }
 
         public List<Serie> Lista()
         {
-            throw new NotImplementedException();
+            return listaSerie;
         }
 
         public int Proximo()
         {
-            throw new NotImplementedException();
+            return listaSerie.Count;
         }
 
         public Serie RetornarPorId(int id)
         {
-            throw new NotImplementedException();
+            return listaSerie[id];
         }
     }
 }

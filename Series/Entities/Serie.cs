@@ -9,6 +9,7 @@ namespace Series.Entities
         private string Titulo { get; set; }
         private string Descricao { get; set; }
         private int Ano { get; set; }
+        public bool Excluido { get; set; }
 
         public Serie(int id, Genero genero, string titulo, string descricao, int ano)
         {
@@ -17,6 +18,7 @@ namespace Series.Entities
             Titulo = titulo;
             Descricao = descricao;
             Ano = ano;
+            Excluido = false;
         }
 
         public override string ToString()
@@ -37,6 +39,11 @@ namespace Series.Entities
         public int RetornaId()
         {
             return Id;
+        }
+
+        public void Excluir() 
+        {
+            Excluido = true;
         }
     }
 }
