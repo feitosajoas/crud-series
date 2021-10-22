@@ -28,6 +28,7 @@ namespace Series.Entities
             retorno += "Titulo: " + Genero + Environment.NewLine;
             retorno += "Descrição: " + Genero + Environment.NewLine;
             retorno += "Ano de Início: " + Genero + Environment.NewLine;
+            retorno += "Excluido: " + Excluido;
             return retorno;
         }
 
